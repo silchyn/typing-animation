@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, #17183B, #A11692, #FF4F79);
+}
+#text {
+    font-size: 5rem;
+    font-family: Armata;
+    font-weight: lighter;
+    color: #9CAFB7;
+}
+@-webkit-keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#cursor {
+    width: 0.25rem;
+    height: 7.5rem;
+    background-color: #9CAFB7;
+    -webkit-animation: flashing 0.25s linear infinite alternate;
+            animation: flashing 0.25s linear infinite alternate;
+}
